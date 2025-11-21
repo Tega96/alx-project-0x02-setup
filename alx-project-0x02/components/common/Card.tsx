@@ -1,11 +1,13 @@
 import { CardProps } from "@/interfaces"
 
-const Card = ({title, content}: CardProps) => {
+const Card: React.FC<CardProps> = ({title, content}) => {
     return (
         <div>
-            <h2>{title}</h2>
+            <h2 >{title}</h2>
             <p>{content}</p>
         </div>
     )
 }
 export default Card;
+
+
